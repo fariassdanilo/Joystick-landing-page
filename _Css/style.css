@@ -1,0 +1,238 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --bg-color:var(--bg-color) #1d2631;
+    --tex-color: #fff;
+    --main-color: #34e7f8;
+    --other-color: #fcfcfc;
+    --h1-font: 4rem;
+    --p-font: 1rem;    
+}
+
+body {
+    background-color: #1d2631;
+    color: var(--tex-color);
+}
+
+
+header {
+    background-color: #1D2631;
+    box-shadow: 0px 3px 10px #464646;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: var(--tex-color);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo i {
+    color: var(--main-color);
+    font-size: 32px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    transition: a .5s ease;
+}
+
+.nav-link:hover {
+    color: var(--main-color);
+}
+
+.cart-icon i {
+    font-size: 32px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.cart-icon i:hover {
+    transform: translateY(-5px);
+    color: var(--main-color);
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 730px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+}
+
+.home {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.home-text h1 {
+    font-size: var(--h1-font);
+    line-height: 1.2;
+}
+
+.home-text h5 {
+    color: #ffffff99;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.home-text h3 {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+
+.home-img img {
+    max-width: 100%;
+    width: 26rem;
+    height: auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 70px;
+    font-size: 16px;
+    font-weight: 500;
+    background: transparent;
+    border: solid 2px var(--tex-color);
+    transition: all.55 ease;
+    color: #fff;
+}
+
+.btn:hover {
+    background: var(--tex-color);
+    border: 2px solid var(--tex-color);
+    color: #000;
+}
+
+.main li img {
+    width: 50px;
+    height: auto;
+    max-width: 100%;
+}
+
+.row {
+    background: var(--main-color);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    justify-content: center;
+    transition: all.55 ease;
+    cursor: pointer;
+    display: inline-flex;
+}
+
+.row:hover {
+    transform: translateY(-8px);
+}
+
+.row2 {
+    background: #ff758d;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    justify-content: center;
+    transition: all.55 ease;
+    cursor: pointer;
+    display: inline-flex;  
+}
+
+.row2:hover {
+    transform: translateY(-8px);
+}
+
+.row3 {
+    background: #ffd06d;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    justify-content: center;
+    transition: all.55 ease;
+    cursor: pointer;
+    display: inline-flex;  
+}
+
+.row3:hover {
+    transform: translateY(-8px);
+}
+

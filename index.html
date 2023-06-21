@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="_css/style.css"> 
+    <title>Pagina de vendas</title>
+</head>
+<script language="javascript" src="funcoes.js"></script>
+<body>
+
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="#" class="logo"><i class='bx bxs-joystick'></i>Joystick</a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Visão Geral</a></li>
+                    <li class="nav-item"><a href="Tech-Specs.html" class="nav-link">Tech Specs</a></li>
+                    <li class="nav-item"><a href="Reviews.html" class="nav-link">Reviews</a></li>
+                    <li class="nav-item"><a href="Contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="cart-icon">
+                <i class='bx bx-cart'></i>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <a onclick="menuShow()"><img class="icon" src="./_Assets/menu_white_36dp.svg"></i></a>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Visão Geral</a></li>
+                <li class="nav-item"><a href="Tech-Specs.html" class="nav-link">Tech Specs</a></li>
+                <li class="nav-item"><a href="Reviews.html" class="nav-link">Reviews</a></li>
+                <li class="nav-item"><a href="Contact.html" class="nav-link">Contact Us</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <section class="home">
+
+        <div class="main">
+            <div class="row">
+                <li><img src="./_Assets/main1.png" alt="Controle preto" onclick="slider('./_Assets/controle-preto.png')"></li>
+            </div>
+    
+            <div class="row2">
+                <li><img src="./_Assets/main2.png" alt="Controle Azul" onclick="slider('./_Assets/controle-azul.png')"></li>
+            </div>
+    
+            <div class="row3">
+                <li><img src="./_Assets/main3.png" alt="Controle verde" onclick="slider('./_Assets/controle-verde.png')"></li>
+            </div>
+    
+        </div>
+
+        <div class="home-img">
+            <img src="_Assets/controle-preto.png" class="one">
+        </div>
+
+        <div class="home-text">
+
+            <h1>USB <br> Joystick</h1>
+            <h5>The best to play</h5>
+            <h3>$199.00</h3>
+            <a href="#" class="btn">Shop Now</a>
+
+        </div>
+    </section>

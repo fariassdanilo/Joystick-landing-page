@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="_css/style.css">
+    <link rel="stylesheet" href="_css/forms.css">    
+    <title>Pagina de vendas</title>
+</head>
+<script language="javascript" src="funcoes.js"></script>
+<body>
+
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="#" class="logo"><i class='bx bxs-joystick'></i>Joystick</a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Visão Geral</a></li>
+                    <li class="nav-item"><a href="Tech-Specs.html" class="nav-link">Tech Specs</a></li>
+                    <li class="nav-item"><a href="Reviews.html" class="nav-link">Reviews</a></li>
+                    <li class="nav-item"><a href="Contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="cart-icon">
+                <i class='bx bx-cart'></i>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <a onclick="menuShow()"><img class="icon" src="./_Assets/menu_white_36dp.svg"></i></a>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Visão Geral</a></li>
+                <li class="nav-item"><a href="Tech-Specs.html" class="nav-link">Tech Specs</a></li>
+                <li class="nav-item"><a href="Reviews.html" class="nav-link">Reviews</a></li>
+                <li class="nav-item"><a href="Contact.html" class="nav-link">Contact Us</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+<body>
+    <section>
+        <h2>Contato</h2>  
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <label class="escrita">Nome</label>
+            <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+            <label class="escrita">Email</label>
+            <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+            <label class="escrita">Mensagem</label>
+            <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea required>
+            <button type="submit" class="escrita">Enviar</button>
+
+            <input type="hidden" name="accessKey" value="4fa2aebb-033f-4167-8672-4e62375d4e7c">
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/Obrigado.html">
+        </form>
+    </section>
+
+
+</body>
