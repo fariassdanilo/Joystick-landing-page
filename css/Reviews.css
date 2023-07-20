@@ -38,13 +38,6 @@ h1 {
     grid-gap: 40px;
 }
 
-@media screen and (max-width: 730px) {
-    .cards {
-        max-width: 350px;
-        flex-wrap: wrap;
-    }
-}
-
 .card h3 {
     font-family: Rubik;
     margin-bottom: 5px;
@@ -55,4 +48,17 @@ p {
     text-align: center;
     font-family: Roboto;
     font-size: 18px;
+}
+
+
+@media screen and (max-width: 930px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    .cards {
+        max-width: 350px;
+        flex-wrap: wrap;
+    }
 }

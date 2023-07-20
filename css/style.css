@@ -94,53 +94,12 @@ header {
     display: none;
 }
 
-@media screen and (max-width: 730px) {
-    .nav-bar {
-        padding: 1.5rem 4rem;
-    }
-    .nav-item {
-        display: none;
-    }
-    .login-button {
-        display: none;
-    }
-    .mobile-menu-icon {
-        display: block;
-    }
-    .mobile-menu-icon button {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
-    .mobile-menu ul {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-bottom: 1rem;
-    }
-    .mobile-menu .nav-item {
-        display: block;
-        padding-top: 1.2rem;
-    }
-    .mobile-menu .login-button {
-        display: block;
-        padding: 1rem 2rem;
-    }
-    .mobile-menu .login-button button {
-        width: 100%;
-    }
-    .open {
-        display: block;
-    }
-}
-
 .home {
     margin-top: 80px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    flex-wrap: wrap;
 }
 
 .home-text h1 {
@@ -163,9 +122,7 @@ header {
 }
 
 .home-img img {
-    max-width: 100%;
     width: 26rem;
-    height: auto;
 }
 
 .btn {
@@ -175,7 +132,7 @@ header {
     font-weight: 500;
     background: transparent;
     border: solid 2px var(--tex-color);
-    transition: all.55 ease;
+    transition: all .55s ease;
     color: #fff;
 }
 
@@ -187,7 +144,6 @@ header {
 
 .main li img {
     width: 50px;
-    height: auto;
     max-width: 100%;
 }
 
@@ -236,3 +192,62 @@ header {
     transform: translateY(-8px);
 }
 
+@media screen and (max-width: 930px) {
+
+    hmtl {
+        font-size: 55%;
+    }
+
+    .home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home-text {
+        text-align: center;
+    }
+
+    .home-img img {
+        width: 20rem;
+    }
+
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+}
